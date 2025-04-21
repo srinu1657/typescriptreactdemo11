@@ -12,6 +12,7 @@ const NewGoal = ({myAddGoalMethod}:NewGoalPropType) => {
         event.preventDefault();
         const entredGoal=goal.current!.value;
         const entredDescription=description.current!.value;
+        event.currentTarget.reset();
         myAddGoalMethod(entredGoal,entredDescription);
     }
     return (
